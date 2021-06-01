@@ -1,0 +1,81 @@
+*
+    box-sizing: border-box
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap')
+// @font-face
+//     font-family: 'Ubuntu', sans-serif
+body
+    font-family: 'ubuntu', sans-serif
+
+.title
+    font-weight: bolder
+    color: #292929
+.title span
+    font-weight: normal
+.item
+    display: flex
+    justify-content: center
+    // align-items: center
+    place-items: center //= align-items: center & justify-items: center
+    font-weight: bold
+    text-align: center
+    margin: 0
+    color: #222
+    font-size: 2em
+    background: #f9d423
+    border: 1px solid #222222
+    box-shadow: 1px 2px 3px grey
+    border-radius: 8px
+    cursor: pointer
+    // padding: 10px
+    &:hover
+        color: #d8d8d8
+
+// CONTAINER
+#container
+    display: grid
+    width: 95vw
+    height: 60vh
+    margin: 0 auto
+    background-color: whitesmoke
+    outline: 8px solid #4834d4
+    grid: repeat(3, 100px) /[col-start] 1fr [col-2] 1fr [col-3] 1fr [col-end]
+    // grid-template-columns: repeat(3, 1fr)
+    // grid-template-rows: 100px 50px
+    // grid-auto-rows: 35px
+    //already comnted:    // grid-auto-flow: dense ********مهم
+    // grid-auto-flow: row
+    //already comnted:    // grid-column-gap: 12px
+    //already comnted:    // grid-row-gap: 8px
+    // grid-gap: 5px
+    //already comnted:    // align-items: center//stretch //end //start
+    //already comnted:    // justify-items: center//stretch//end//start
+    // place-items: stretch// center stretch
+
+    //already comnted:    // align-content: space-evenly//space-around//space-between//end//start
+    //already comnted:    // justify-content: space-evenly//space-around//space-between//end//start
+    // place-content: center
+    // grid-template: "h h h" 60px "main main sidebar" auto "footer footer footer" 100px /[col-start] 1fr [col-2] 1fr [col-3] 1fr [col-end]
+    // grid: auto-flow 100px / repeat(3, 1fr)
+
+// .header
+//     grid-area: h
+// .main
+//     grid-area: main
+// .sidebar
+//     grid-area: sidebar
+// .footer
+//     grid-area: footer
+// .a
+//     grid-column: 10/11
+.one
+    grid-area: 1 / 1 / 2 / 3
+
+.two
+    grid-row: 2 / 5
+
+.five
+    align-self: center
+    justify-self: center
+    place-self: center
+.six
+    grid-area: 9
